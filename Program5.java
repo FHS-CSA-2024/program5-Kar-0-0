@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 class Program5{
     public static void main(String[] args){
         int royaleMiles = 286;
@@ -15,23 +17,23 @@ class Program5{
         double badWagonMileage = (double) badWagonMiles / badWagonGallons;
         
         System.out.println("Mushroom Cup Prix Racer Average Miles/Per Gallon: ");
-        System.out.println("\nRoyale: " + (int) (royaleMileage * 100) / 100.0);
-        System.out.println("\nKoopa King: " +  (int) (koopaKingMileage * 100) / 100.0);
-        System.out.println("\nPipe Frame: " + (int) (pipeFrameMileage * 100) / 100.0);
-        System.out.println("\nBadwagon: " + (int) (badWagonMileage * 100) / 100.0);
+        System.out.println("\nRoyale: " + Math.round((royaleMileage * 10)) / 10.0);
+        System.out.println("\nKoopa King: " +  Math.round((koopaKingMileage * 10)) / 10.0);
+        System.out.println("\nPipe Frame: " + Math.round(pipeFrameMileage * 10) / 10.0);
+        System.out.println("\nBadwagon: " + Math.round(badWagonMileage*10) / 10.0);
         
         /*
          Output: 
          
-            Mushroom Cup Prix Racer Average Miles/Per Gallon: 
+          Mushroom Cup Prix Racer Average Miles/Per Gallon: 
 
-            Royale: 31.77
+          Royale: 31.8
             
-            Koopa King: 10.3
+          Koopa King: 10.3
             
-            Pipe Frame: 20.05
+          Pipe Frame: 20.1
             
-            Badwagon: 14.63
+          Badwagon: 14.6
          
          
          */
